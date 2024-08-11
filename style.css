@@ -690,7 +690,7 @@
 }
 /*Homedecor page css*/
 .Homedecor{
-    background-image: url('C:/Users/User/Pictures/Saved Pictures/5faee9bd2299e38b35a8fde3213f513a.jpg');
+    background-image: url('Images/5faee9bd2299e38b35a8fde3213f513a.jpg');
     background-position: center;
     background-repeat:repeat;
     width:100%;
@@ -699,7 +699,7 @@
 }
 /*Nighties css*/
 .nighties{
-    background-image: url("C:Users/User/Desktop/website/Images/Screenshot 2024-07-22 230539.png");
+    background-image: url("Images/Screenshot 2024-07-22 230539.png");
     background-position: center;
     background-repeat:repeat;
     background-size:contain;
@@ -799,7 +799,7 @@
 }
 /*naphkins*/
 .naphkins{
-    background-image: url("C:Users/User/Desktop/website/Images/Screenshot 2024-07-22 230539.png");
+    background-image: url("Images/Screenshot 2024-07-22 230539.png");
     background-position: center;
     background-repeat:repeat;
     max-width:1366px;
