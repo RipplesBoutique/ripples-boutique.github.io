@@ -51,14 +51,14 @@
         max-width:18rem;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 380px) {
     .Rip {
         height: auto;
         padding: 5px;
     }
     .Riptext {
         margin-left:20%;
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
     .Rip img{
         max-width:12rem;
