@@ -482,7 +482,7 @@
     -webkit-text-fill-color:white;
     height: 30rem;
     margin-top: 0;
-    width: 100%;
+    width: auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: -5px -5px rgba(0, 0, 0, 0.3);
@@ -490,18 +490,19 @@
 }
 @media (max-width: 1024px) {
     .ab {
-        font-size: 20px;
+        font-size: 1.05rem;
         height: auto;
-        margin-top: -20px;
-        width: 100%;
+        margin-top:0;
+        width:auto;
     }
 }
 @media (max-width: 768px) {
     .ab {
-        font-size: 18px;
+        font-size:0.75rem;
         height: auto;
         padding: 20px;
-        margin-top: -10px;
+        margin-top:0;
+        width: auto;
     }
 }
 /*Contact css*/
@@ -570,7 +571,7 @@
     font-style:oblique;
     -webkit-text-fill-color: white;
     display:flex;
-    width: 100%;
+    width: auto;
     margin: 0;
     margin-top: 0;
     margin-left: 0;
@@ -580,12 +581,12 @@
 .con{
     display: flex;
     margin: 10px;
-    box-shadow: -5px -5px rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
+    box-shadow: -0.25rem -0.25rem rgba(0, 0, 0, 0.3);
+    border-radius:0.5rem;
 }
 @media (max-width: 1024px) {
     .co {
-        font-size: 16px;
+        font-size: 1.20rem;
         flex-direction: column;
         align-items: center;
         padding: 10px;
@@ -597,7 +598,7 @@
 }
 @media (max-width: 768px) {
     .co {
-        font-size: 14px;
+        font-size:1.0rem;
         padding: 5px;
     }
     .con {
