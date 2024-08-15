@@ -720,7 +720,7 @@
 }
 @media (max-width: 368px) {
     .co {
-        font-size:1.20rem;
+        font-size:1.0rem;
         padding: 5px;
     }
     .con {
@@ -755,7 +755,7 @@
     .en {
         margin-left: 0;
         margin-top: 10px;
-        font-size: 1.20rem;
+        font-size: 1.0rem;
         padding-left: 0;
     }
 }
