@@ -69,7 +69,7 @@
     }
     .Riptext {
         margin-left:20%;
-        font-size: 1.25rem;
+        font-size: 1.08rem;
     }
     .Rip img{
         max-width:13rem;
@@ -679,6 +679,7 @@
 }
 .co{
     font-family: "Dancing Script";
+    font-size:1.3rem;
     -webkit-text-fill-color: white;
     display:flex;
     width: auto;
@@ -755,7 +756,7 @@
     .en {
         margin-left: 0;
         margin-top: 10px;
-        font-size: 1.0rem;
+        font-size: 0.95rem;
         padding-left: 0;
     }
 }
