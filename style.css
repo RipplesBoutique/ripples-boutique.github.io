@@ -64,32 +64,15 @@
     .Rip {
         height: auto;
         padding: 5px;
+        margin-left:0%;
         background-color: rgba(0, 0, 0, 0.5);
     }
     .Riptext {
         margin-left:20%;
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .Rip img{
-        max-width:12rem;
-    }
-}
-@media (max-width: 290px) {
-    .Ripples{
-        background-size: 290px 768px;
-        background-attachment:fixed;
-    }
-    .Rip {
-        height: auto;
-        padding: 5px;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-    .Riptext {
-        margin-left:20%;
-        font-size: 1rem;
-    }
-    .Rip img{
-        max-width:12rem;
+        max-width:13rem;
     }
 }
 .nav-bar{
@@ -248,8 +231,7 @@
 .slider{
     display: flex;
     height: 500px;
-    max-width: 1366px;
-    width: 100%;
+    width:auto;
     margin-left: 0px;
     margin-top: 0px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -257,44 +239,45 @@
     border-radius: 20px;
 }
 .slider1{
-    width: 100%;
-    max-width: 200px;
-    max-height: 300px;
-    height: 100%;
+    width: auto;
+    max-width: 19rem;
+    max-height: 15rem;
+    height:auto;
     margin: 0;
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 5%;
     position:relative;
     overflow: hidden;
     border:10px;
-    padding:20px;;
+    padding:10px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .slider1 .list{
     position: relative;
-    width: max-content;
-    height: 300px;
-    left: -80%;
+    width:max-content;
+    height:19rem;
+    left: 0;
     top: 0;
     display: flex;
     transition: 2s;
 }  
 .slider1 .list img{
-    width: 65%;
-    height: 80%;
+    width:90%;
+    height:80%;
     object-fit:fill;
 
 }
 .slider1 .buttons{
-    top: -60%;
-    left: -10%;
-    width: 120%;
+    top: 50%;
+    left: 0;
+    width: 100%;
     display: flex;
-    position: relative;
+    position:absolute;
     justify-content: space-between;
 }
 .slider1 .buttons button{
-    width: 40px;
-    height: 40px;
+    width:2.5rem;
+    height:2.5rem;
     border-radius: 40%;
     background-color: #fff5;
     color: #fff;
@@ -303,9 +286,9 @@
     font-weight: bold;
 }
 .slider1 .dots{
-    position: relative;
-    top: -50%;
-    left:0%;
+    position:absolute;
+    top: 90%;
+    left:0;
     color: #fff;
     width: 100%;
     margin: 0;
@@ -314,26 +297,26 @@
     justify-content: center;
 }
 .slider1 .dots li{
-    list-style: none;
-    width: 10px;
-    height: 10px;
+    list-style:none;
+    width: 0.65rem;
+    height:0.65rem;
     background-color: #fff;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 5rem;
     transition: 0.5s;
 }
 .slider1 .dots li.active{
-    width: 30px;
+    width: 1.75rem;
 }
 
 .newarrival{
     display: flex;
-    margin-top: 60px;
+    margin-top: 3%;
     
 }
 .newarrival img{
-    width: 250px;
-    height: 300px;
+    width: 18rem;
+    height: 20rem;
     border-radius: 25%;
     margin-left: 100px;
     margin-top: 0px;
@@ -361,27 +344,101 @@
 }
 .new:hover {
     transform: scale(1.2);
+    transition-duration: 3s;
 }
 .loop{
-    width: 300px;
-    height:300px;
-    border-radius: 40%;
-    margin-left: 100px;
-    margin-top: 60px;
+    width: 20rem;
+    height:20rem;
+    border-radius: 35%;
+    margin-left:10%;
+    margin-top: 3%;
 }
 @media (max-width: 1024px) {
     .slider {
-        height: auto;
-        flex-direction: row;
+        height:400px;
+        flex-direction:row;
+        flex-wrap: wrap;
         padding: 10px;
-        justify-content: flex-start;
+        background-color: rgba(0, 0, 0, 0.5);
     }
     .slider1 {
-        margin-left: 0;
+        margin-left:0;
         margin-top: 10px;
-        max-width: 30%;
         height: auto;
-        padding: 15px;
+        padding:10px;
+        width: auto;
+        max-width: 15rem;
+        max-height: 15rem;
+        height:auto;
+    }
+    .slider1 .list {
+        left: 0;
+        width: 100%;
+        width: max-content;
+    }
+    .slider1 .buttons {
+        width: 100%;
+        margin-bottom:-60%;
+    }
+    .slider1 .buttons button {
+        width:2.75rem;
+        height:2.75rem;
+    }
+    .slider1 .dots {
+       bottom: -20%;
+    }
+    .slider1 .dots li {
+        width: 0.5rem;
+        height:0.5rem;
+        margin: 5px;
+    }
+    .slider1 .dots li.active {
+        width: 1.75rem;
+    }
+
+    .newarrival {
+        flex-direction: column;
+        display: flex;
+        margin-top:0%;
+    }
+    .newarrival img {
+        width: 15rem;
+        height: 17rem;
+        margin-left: 30%;
+        margin-top: 3%;
+    }
+    .new {
+        font-size: 30px;
+        top: 30%;
+        left: 50%;
+    }
+    .loop {
+        width: 18rem;
+        height:18rem;
+        margin-left: 15%;
+        margin-top: 0%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        height: auto;
+        flex-direction:row;
+        flex-wrap: wrap;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .slider1{
+        width: auto;
+        max-width:18rem;
+        max-height:15rem;
+        height:auto;
+        margin-top: 5%;
+        margin-left:0;
+        border:10px;
+        padding:10px;
+        background-color: rgba(0, 0, 0, 0.7);
     }
     .slider1 .list {
         left: 10%;
@@ -392,58 +449,65 @@
     .slider1 .buttons {
         width: 100%;
         margin-bottom:10%;
-        
     }
     .slider1 .buttons button {
-        width: 30px;
-        height: 30px;
+        width:2.75rem;
+        height:2.75rem;
+        border-radius: 35%;
     }
     .slider1 .dots {
        bottom: -20%;
     }
     .slider1 .dots li {
-        width: 8px;
-        height: 8px;
+        width: 0.65rem;
+        height:0.65rem;
         margin: 5px;
     }
     .slider1 .dots li.active {
-        width: 20px;
+        width: 1.75rem;
     }
-
+    
     .newarrival {
-        margin-top: 3%;
+        margin-top:2%;
     }
     .newarrival img {
-        width: 200px;
-        height: 250px;
-        margin-left: 60%;
-        margin-top: 0px;
+        width: 16rem;
+        height:19rem;
+        margin-left: 40%;
+        margin-top: 3%;
         align-content: center;
     }
     .new {
         font-size: 35px;
         margin-top: 0%;
-        left: 40%;
+        left: 80%;
     }
     .loop {
-        width: 250px;
-        height: 250px;
+        width: 18rem;
+        height:18rem;
         margin-left: 25%;
-        margin-top: 30px;
+        margin-top: 10%;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 368px) {
     .slider {
         height: auto;
-        flex-direction: column;
+        flex-direction:column;
+        flex-wrap: wrap;
+        width: max-content;
         padding: 10px;
+        margin-left: 0%;
+        background-color: rgba(0, 0, 0, 0.5);
     }
     .slider1 {
-        margin-left: 0;
+        margin-left:0;
         margin-top: 10px;
-        max-width: 40%;
         height: auto;
-        padding: 5px;
+        padding:10px;
+        width: auto;
+        max-width: 18rem;
+        max-height: 15rem;
+        height:auto;
     }
     .slider1 .list {
         left: 0;
@@ -453,48 +517,49 @@
     .slider1 .buttons {
         width: 100%;
         margin-bottom:-60%;
-        
     }
     .slider1 .buttons button {
-        width: 30px;
-        height: 30px;
+        width:2.75rem;
+        height:2.75rem;
     }
     .slider1 .dots {
        bottom: -20%;
     }
     .slider1 .dots li {
-        width: 8px;
-        height: 8px;
+        width: 0.5rem;
+        height:0.5rem;
         margin: 5px;
     }
     .slider1 .dots li.active {
-        width: 20px;
+        width: 1.75rem;
     }
 
     .newarrival {
         flex-direction: column;
-        align-items:end;
-        margin-top: -35%;
+        align-items:center;
+        margin-top: 10%;
+        margin-left:0%;
     }
     .newarrival img {
-        width: 200px;
-        height: 250px;
+        width: 13rem;
+        height: 18rem;
         margin-left: 0;
         margin-top: 10px;
     }
     .new {
         font-size: 30px;
-        top: 0%;
+        top: 70%;
         left: 65%;
     }
     .loop {
-        width: 250px;
-        height: 250px;
-        margin-left: 30%;
+        width: 18rem;
+        height:18rem;
+        margin-left:0%;
         margin-top: 20px;
         justify-content: center;
     }
 }
+
 /*About css*/
 .ab{
     font-family: "Dancing Script";
