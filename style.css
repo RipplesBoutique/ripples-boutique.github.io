@@ -39,23 +39,6 @@
     font-size:1.75rem;
     -webkit-text-fill-color: white;
 } 
-@media (max-width: 2560px) {
-    .Ripples{
-        background-size: 2560px 1600px;
-        background-attachment:fixed;
-    }
-    .Rip {
-        height: auto; 
-        padding:1.50rem; 
-    }
-    .Riptext {
-        margin-left: 25%; 
-        font-size: 1.25rem;
-    }
-    .Rip img{
-        max-width:18rem;
-    }
-}
 @media (max-width: 768px) {
     .Ripples{
         background-size: 768px 1024px;
