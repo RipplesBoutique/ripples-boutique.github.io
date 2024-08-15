@@ -56,7 +56,7 @@
 }
 @media (max-width: 380px) {
     .Ripples{
-        background-size: 380px auto;
+        background-size: 350px auto;
     }
     .Rip {
         height: auto;
