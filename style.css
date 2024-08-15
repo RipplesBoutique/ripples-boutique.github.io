@@ -570,6 +570,7 @@
     height: 30rem;
     margin-top: 0;
     width: auto;
+    padding:20px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: -5px -5px rgba(0, 0, 0, 0.3);
@@ -578,6 +579,7 @@
 @media (max-width: 1024px) {
     .ab {
         font-size: 1.05rem;
+        padding: 20px;
         height: auto;
         margin-top:0;
         width:auto;
@@ -585,7 +587,16 @@
 }
 @media (max-width: 768px) {
     .ab {
-        font-size:0.75rem;
+        font-size:0.95rem;
+        height: auto;
+        padding: 20px;
+        margin-top:0;
+        width: auto;
+    }
+}
+@media (max-width: 368px) {
+    .ab {
+        font-size:0.90rem;
         height: auto;
         padding: 20px;
         margin-top:0;
@@ -636,7 +647,8 @@
     }
     .social-link {
         margin: 10px;
-        font-size: 30px;
+        font-size: 40px;
+        padding: 10px;
     }
 }
 @media (max-width: 768px) {
@@ -647,15 +659,26 @@
         align-items: center;
     }
     .social-link {
-        margin: 10px 0;
-        font-size: 25px;
+        margin: 10px;
+        font-size: 35px;
+        padding: 10px;
+    }
+}
+@media (max-width: 368px) {
+    .social-links {
+        justify-content: center;
+        padding-left: 0;
+        height: auto;
+        align-items: center;
+    }
+    .social-link {
+        margin: 10px;
+        font-size: 30px;
         padding: 10px;
     }
 }
 .co{
     font-family: "Dancing Script";
-    font-size:1.20rem;
-    font-style:oblique;
     -webkit-text-fill-color: white;
     display:flex;
     width: auto;
@@ -680,10 +703,22 @@
     }
     .con {
         margin: 5px;
-        box-shadow: -3px -3px rgba(0, 0, 0, 0.3);
+        box-shadow: -5px -5px rgba(0, 0, 0, 0.3);
     }
 }
 @media (max-width: 768px) {
+    .co {
+        font-size:1.20rem;
+        padding: 5px;
+    }
+    .con {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0;
+        box-shadow: -5px -5px rgba(0, 0, 0, 0.3);
+    }
+}
+@media (max-width: 368px) {
     .co {
         font-size:1.0rem;
         padding: 5px;
@@ -692,23 +727,36 @@
         flex-direction: column;
         align-items: center;
         margin: 5px 0;
-        box-shadow: -2px -2px rgba(0, 0, 0, 0.3);
+        box-shadow: -5px -5px rgba(0, 0, 0, 0.3);
     }
 }
 .en{
-    margin-left: 300px;
+    margin-left: 40%;
+    margin-top: 0;
     box-shadow: -5px -5px rgba(0, 0, 0, 0.3);
     border-radius: 30px;
+    padding: 20px;
+    font-size: 1.25rem;
 }
 @media (max-width: 1024px) {
     .en {
-        margin-left: 150px;
+        margin-left: 10%;
+        font-size: 1.25rem;
     }
 }
 @media (max-width: 768px) {
     .en {
         margin-left: 0;
         margin-top: 10px;
+        font-size: 1.25rem;
+    }
+}
+@media (max-width: 368px) {
+    .en {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 0.90rem;
+        padding-left: 0;
     }
 }
 /*Story css*/
