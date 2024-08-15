@@ -5,7 +5,7 @@
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position:top; 
-    background-size:1366px 1024px;
+    background-size:1366px 700px;
     overflow-x: hidden;
 }
 .Rip{
@@ -64,6 +64,7 @@
     .Rip {
         height: auto;
         padding: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
     }
     .Riptext {
         margin-left:20%;
@@ -81,6 +82,7 @@
     .Rip {
         height: auto;
         padding: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
     }
     .Riptext {
         margin-left:20%;
