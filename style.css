@@ -3,9 +3,9 @@
     margin-top: 0;
     background-image: url("Images/back.png");
     background-repeat:no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
     background-position:top; 
-    background-size:auto;
+    background-size:1366px auto;
     overflow-x: hidden;
 }
 .Rip{
@@ -41,7 +41,8 @@
 } 
 @media (max-width: 768px) {
     .Ripples{
-        background-size: auto;
+        background-size: 768px auto;
+        background-attachment:fixed;
     }
     .Rip {
         height: auto; 
@@ -55,9 +56,27 @@
         max-width:18rem;
     }
 }
-@media (max-width: 300px) {
+@media (max-width: 368px) {
     .Ripples{
-        background-size: auto;
+        background-size: 368px auto;
+        background-attachment:fixed;
+    }
+    .Rip {
+        height: auto;
+        padding: 5px;
+    }
+    .Riptext {
+        margin-left:20%;
+        font-size: 1rem;
+    }
+    .Rip img{
+        max-width:12rem;
+    }
+}
+@media (max-width: 290px) {
+    .Ripples{
+        background-size: 290px auto;
+        background-attachment:fixed;
     }
     .Rip {
         height: auto;
