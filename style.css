@@ -5,7 +5,7 @@
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position:top; 
-    background-size:1366px auto;
+    background-size:1366px 1024px;
     overflow-x: hidden;
 }
 .Rip{
@@ -41,7 +41,7 @@
 } 
 @media (max-width: 768px) {
     .Ripples{
-        background-size: auto;
+        background-size: 768px 1024px;
         background-attachment:fixed;
     }
     .Rip {
@@ -58,7 +58,7 @@
 }
 @media (max-width: 368px) {
     .Ripples{
-        background-size:auto;
+        background-size: 368px 768px;
         background-attachment:fixed;
     }
     .Rip {
@@ -75,7 +75,7 @@
 }
 @media (max-width: 290px) {
     .Ripples{
-        background-size: auto;
+        background-size: 290px 768px;
         background-attachment:fixed;
     }
     .Rip {
