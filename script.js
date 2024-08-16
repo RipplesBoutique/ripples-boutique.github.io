@@ -2,6 +2,7 @@ document.body.addEventListener('mousemove',function(event) {
   const navBar = document.getElementById('navBar');
   const arrow = document.getElementById('arrow');
   const mainPage = document.querySelector('.main-page');
+  const toggleButton = document.getElementById('toggleButton');
 
   if (event.clientX < 10){
     navBar.classList.add('open');
@@ -12,6 +13,28 @@ document.body.addEventListener('mousemove',function(event) {
     mainPage.classList.remove('shift');    
     arrow.style.left='0';
   }
+
+  // Click event listener for the toggle button
+toggleButton.addEventListener('click', function() {
+  if (navBar.classList.contains('open')) {
+      closeNavBar();
+  } else {
+      openNavBar();
+  }
+});
+// Function to open the navBar
+function openNavBar() {
+  navBar.classList.add('open');
+  mainPage.classList.add('shift');
+  arrow.style.left = `${NAVBAR_WIDTH}px`;
+}
+
+// Function to close the navBar
+function closeNavBar() {
+  navBar.classList.remove('open');
+  mainPage.classList.remove('shift');
+  arrow.style.left = '0';
+}
 });
 
 //code for image slider

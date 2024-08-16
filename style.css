@@ -75,6 +75,24 @@
         max-width:13rem;
     }
 }
+/* Toggle Button */
+.toggleBut {
+    position: fixed;
+    font-family:"Lora";
+    font-size: 1.20rem;
+    top:5%;
+    left: 3%;
+    z-index: 1000;
+    padding:0.5rem 1.0rem;
+    background-color: white;
+    color: black;
+    border: 0.15rem solid black;
+    cursor: pointer;
+}
+.toggleBut:hover {
+    background-color: #555;
+    color: white;
+}
 .nav-bar{
     background-image: url("Images/WhatsApp Image 2024-07-14 at 16.27.15_24788bd7.jpg");
     background-repeat:no-repeat;
@@ -85,7 +103,7 @@
     position:fixed;
     height:100%;
     width: 0;
-    padding-top:60px;
+    padding-top:6rem;
     font-size:larger;
     font-style: italic;
     top: 0;
@@ -164,12 +182,14 @@
 .arr {
     width: 20px; 
     height: 20px; 
-    margin-left: 10px; 
+    margin-left: 5%; 
     font-size: 15px; 
 }
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
     .nav-bar {
-        background-size: 300px 600px; 
+        top: -25%;
+        padding-top: 15rem;
+        background-size: 300px 768; 
         font-size: larger; 
     }
     #navBar.open {
@@ -182,25 +202,25 @@
         left: 200px; 
     }
     .sub-menu a {
-        font-size: small;
+        font-size:1.15rem;
         padding: 12px; 
     }
     .arrow {
         border-left: 8px solid black; 
     }
-    
     .arr {
         width: 18px;
         height: 18px; 
-        margin-left: 8px; 
+        margin-left:3%; 
         font-size: 14px; 
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .nav-bar {
-        background-size: 200px 400px;
+        background-size: 200px 768px;
         font-size: medium; 
-        padding-top: 30px; 
+        padding-top:30%; 
+        top:-20%;
     }
     .nav-bar a {
         padding: 8px 10px;
@@ -226,6 +246,72 @@
         height: 16px; 
         margin-left: 6px; 
         font-size: 12px; 
+    }
+    .toggleBut {
+        position: fixed;
+        font-family:"Lora";
+        font-size: 1.0rem;
+        top:10%;
+        left: 5%;
+        z-index: 1000;
+        padding:0.5rem 1.0rem;
+        background-color: white;
+        color: black;
+        border: 0.15rem solid black;
+        cursor: pointer;
+    }
+    .toggleBut:hover {
+        background-color: #555;
+        color: white;
+    }
+}
+@media (max-width: 368px) {
+    .nav-bar {
+        background-size: 368px 768px;
+        font-size: medium; 
+        padding-top:85%; 
+    }
+    .nav-bar a {
+        padding: 8px 10px;
+    }
+    #navBar.open {
+        width: 150px; 
+    }
+    .main-page.shift {
+        margin-left: 150px; 
+    }
+    #navBar.open + .arrow {
+        left: 150px; 
+    }
+    .sub-menu a {
+        font-size:1.0rem;
+        padding: 8px;
+    }
+    .arrow {
+        border-left: 6px solid black; 
+    }
+    .arr {
+        width: 16px;
+        height: 16px; 
+        margin-left: 6px; 
+        font-size: 12px; 
+    }
+    .toggleBut {
+        position: fixed;
+        font-family:"Lora";
+        font-size: 0.80rem;
+        top:12%;
+        left: 8%;
+        z-index: 1000;
+        padding:0.1rem 0.25rem;
+        background-color: white;
+        color: black;
+        border: 0.15rem solid black;
+        cursor: pointer;
+    }
+    .toggleBut:hover {
+        background-color: #555;
+        color: white;
     }
 }
 .slider{
