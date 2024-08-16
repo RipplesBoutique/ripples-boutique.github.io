@@ -299,7 +299,7 @@
     .toggleBut {
         position: fixed;
         font-family:"Lora";
-        font-size: 0.80rem;
+        font-size: 1.0rem;
         top:12%;
         left: 8%;
         z-index: 1000;
@@ -848,8 +848,8 @@
     .con {
         flex-direction: column;
         align-items: center;
-        margin: 5px 0;
-        font-size:1.15rem;
+        margin-left: -15px;
+        font-size:0.95rem;
         box-shadow: -5px -5px rgba(0, 0, 0, 0.3);
     }
 }
@@ -878,7 +878,7 @@
     .en {
         margin-left: 0;
         margin-top: 10px;
-        font-size: 0.95rem;
+        font-size: 0.80rem;
         padding-left: 0;
     }
 }
