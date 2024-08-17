@@ -93,20 +93,18 @@ document.querySelectorAll('.nav-item').forEach(item => {
       }
   });
 
-    // Handle touchstart for touch screens
+    // touch screens
     item.addEventListener('touchstart', (e) => {
-    
-  
       const submenu = item.querySelector('.sub-menu');
-      if (submenu) {
-        if (submenu.style.display === 'block') {
+        if (submenu) {
+          if (submenu.style.display === 'block') {
           submenu.style.display = 'none';
-        } else {
+          } else {
           submenu.style.display = 'block';
+          }
         }
-      }
+      });
     });
-  });
 //code for image expand
 document.addEventListener('DOMContentLoaded', function() {
   const lightbox = document.getElementById('lightbox');
