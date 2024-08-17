@@ -98,8 +98,6 @@ document.querySelectorAll('.nav-item').forEach(item => {
       const submenu = item.querySelector('.sub-menu');
         if (submenu) {
           if (submenu.style.display === 'block') {
-          submenu.style.display = 'none';
-          } else {
           submenu.style.display = 'block';
           }
         }
