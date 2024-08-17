@@ -95,7 +95,7 @@ document.querySelectorAll('.nav-item').forEach(item => {
 
     // Handle touchstart for touch screens
     item.addEventListener('touchstart', (e) => {
-      e.stopPropagation();
+    
   
       const submenu = item.querySelector('.sub-menu');
       if (submenu) {
