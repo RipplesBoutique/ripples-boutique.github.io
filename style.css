@@ -109,12 +109,14 @@
     top: 0;
     left: 0;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-anchor:auto;
+    overflow-wrap:break-word;
 }
 .nav-item {
     position: relative;
 }
-.nav-item > a {
+.nav-item > a { 
     color: white;
     padding: 16px;
     text-decoration: none;
@@ -301,7 +303,7 @@
         position: fixed;
         font-family:"Lora";
         font-size: 1.0rem;
-        top:12%;
+        top:8%;
         left: 8%;
         z-index: 1000;
         padding:0.1rem 0.25rem;

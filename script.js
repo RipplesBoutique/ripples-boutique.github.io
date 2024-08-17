@@ -36,67 +36,6 @@ function closeNavBar() {
   arrow.style.left = '0';
 }
 });
-
-// Desktop mousemove event
-document.body.addEventListener('mousemove', handleMouseOrTouchMove);
-
-// Mobile touch events
-document.body.addEventListener('touchstart', handleMouseOrTouchMove);
-document.body.addEventListener('touchmove', handleMouseOrTouchMove);
-
-function handleMouseOrTouchMove(event) {
-  const navBar = document.getElementById('navBar');
-  const arrow = document.getElementById('arrow');
-  const mainPage = document.querySelector('.main-page');
-
-  // Determine the X coordinate based on event type
-  let clientX;
-  if (event.type === 'mousemove') {
-    clientX = event.clientX;
-  } else if (event.type === 'touchstart' || event.type === 'touchmove') {
-    clientX = event.touches[0].clientX;
-  }
-
-  // Toggle navigation bar based on the X coordinate
-  if (clientX < 10) {
-    navBar.classList.add('open');
-    mainPage.classList.add('shift');
-    arrow.style.left = '250px';
-  } else if (clientX > 250) {
-    navBar.classList.remove('open');
-    mainPage.classList.remove('shift');
-    arrow.style.left = '0';
-  }
-}
-
-// Toggle button functionality
-const toggleButton = document.getElementById('toggleButton');
-toggleButton.addEventListener('click', function() {
-  const navBar = document.getElementById('navBar');
-  const mainPage = document.querySelector('.main-page');
-  const arrow = document.getElementById('arrow');
-
-  if (navBar.classList.contains('open')) {
-    closeNavBar(navBar, mainPage, arrow);
-  } else {
-    openNavBar(navBar, mainPage, arrow);
-  }
-});
-
-// Function to open the navigation bar
-function openNavBar(navBar, mainPage, arrow) {
-  navBar.classList.add('open');
-  mainPage.classList.add('shift');
-  arrow.style.left = '250px';
-}
-
-// Function to close the navigation bar
-function closeNavBar(navBar, mainPage, arrow) {
-  navBar.classList.remove('open');
-  mainPage.classList.remove('shift');
-  arrow.style.left = '0';
-}
-
 //code for image slider
 if (document.querySelector('.slider')) {
 let slider = document.querySelector('.slider .list');
@@ -153,6 +92,25 @@ document.querySelectorAll('.nav-item').forEach(item => {
           submenu.style.display = 'none';
       }
   });
+});
+//code for sub-menu
+const dropdown = document.getElementById('dropdown');
+dropdown.addEventListener('click', function(){
+document.querySelectorAll('.nav-item').forEach(item => {
+  item.addEventListener('click', () => {
+      const submenu = item.querySelector('.sub-menu');
+      if (submenu) {
+          submenu.style.display = 'block';
+      }
+  });
+
+  item.addEventListener('click', () => {
+      const submenu = item.querySelector('.sub-menu');
+      if (submenu) {
+          submenu.style.display = 'none';
+      }
+  });
+});
 });
 //code for image expand
 document.addEventListener('DOMContentLoaded', function() {
