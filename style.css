@@ -269,7 +269,7 @@
     .nav-bar {
         background-size: 368px 768px;
         font-size: medium; 
-        padding-top:85%; 
+        padding-top:65%; 
     }
     .nav-bar a {
         padding: 8px 10px;
@@ -284,7 +284,7 @@
         left: 150px; 
     }
     .sub-menu a {
-        font-size:1.0rem;
+        font-size:0.90rem;
         padding: 8px;
     }
     .arrow {
