@@ -107,17 +107,6 @@ document.querySelectorAll('.nav-item').forEach(item => {
       }
     });
   });
-  
-  document.addEventListener('touchstart', (e) => {
-    const openSubmenus = document.querySelectorAll('.sub-menu[style="display: block;"]');
-    openSubmenus.forEach(submenu => {
-      // Check if the touch is outside the open submenus
-      if (!submenu.contains(e.target) && !submenu.previousElementSibling.contains(e.target)) {
-        submenu.style.display = 'none';
-      }
-    });
-});
-
 //code for image expand
 document.addEventListener('DOMContentLoaded', function() {
   const lightbox = document.getElementById('lightbox');
