@@ -92,26 +92,32 @@ document.querySelectorAll('.nav-item').forEach(item => {
           submenu.style.display = 'none';
       }
   });
-});
-//code for sub-menu
-const dropdown = document.getElementById('dropdown');
-dropdown.addEventListener('click', function(){
-document.querySelectorAll('.nav-item').forEach(item => {
-  item.addEventListener('click', () => {
-      const submenu = item.querySelector('.sub-menu');
-      if (submenu) {
-          submenu.style.display = 'block';
-      }
-  });
 
-  item.addEventListener('click', () => {
+    // Handle touchstart for touch screens
+    item.addEventListener('touchstart', (e) => {
+      e.stopPropagation();
+  
       const submenu = item.querySelector('.sub-menu');
       if (submenu) {
+        if (submenu.style.display === 'block') {
           submenu.style.display = 'none';
+        } else {
+          submenu.style.display = 'block';
+        }
       }
+    });
   });
+  
+  document.addEventListener('touchstart', (e) => {
+    const openSubmenus = document.querySelectorAll('.sub-menu[style="display: block;"]');
+    openSubmenus.forEach(submenu => {
+      // Check if the touch is outside the open submenus
+      if (!submenu.contains(e.target) && !submenu.previousElementSibling.contains(e.target)) {
+        submenu.style.display = 'none';
+      }
+    });
 });
-});
+
 //code for image expand
 document.addEventListener('DOMContentLoaded', function() {
   const lightbox = document.getElementById('lightbox');

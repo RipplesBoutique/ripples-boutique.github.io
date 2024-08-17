@@ -140,12 +140,14 @@
 .nav-bar a:hover {
     background-color: #575757;
 }
+.sub-menu{
+    display:none;
+}
 .sub-menu a {
     color: #ffe5b4;
     background-color: #333;
     padding: 16px;
     text-decoration: none;
-    display: block;
 }
 .sub-menu a:hover {
     background-color: #575757;
@@ -187,6 +189,7 @@
     height: 20px; 
     margin-left: 5%; 
     font-size: 15px; 
+    cursor: pointer;
 }
 @media (max-width: 1024px) {
     .nav-bar {
@@ -298,6 +301,7 @@
         height: 16px; 
         margin-left: 6px; 
         font-size: 12px; 
+
     }
     .toggleBut {
         position: fixed;
