@@ -1069,7 +1069,7 @@
 @media (max-width:1024px){
     .catext{
         font-size: 1.75rem;
-        font-family: "Dancing script";
+        font-family: "Dancing Script";
     }
     .category{
         background-color: rgba(0, 0, 0, 0.3);
@@ -1107,7 +1107,7 @@
         margin: 0;
     }
     .headt{
-        font-family: "Dancing script";
+        font-family: "Dancing Script";
         font-size: 2.5rem;
         text-align: center;
     }
@@ -1115,12 +1115,11 @@
         font-size: 1.5rem;
         margin-left: 25%;
     }
-
 }
 @media (max-width:768px){
     .catext{
         font-size: 1.5rem;
-        font-family: "Dancing script";
+        font-family: "Dancing Script";
     }
     .category{
         background-color: rgba(0, 0, 0, 0.2);
@@ -1158,7 +1157,7 @@
         margin: 0;
     }
     .headt{
-        font-family: "Dancing script";
+        font-family: "Dancing Script";
         font-size: 2rem;
         text-align: center;
     }
@@ -1166,12 +1165,11 @@
         font-size: 1.25rem;
         margin-left: 25%;
     }
-
 }
 @media (max-width:368px){
     .catext{
         font-size: 1.25rem;
-        font-family: "Dancing script";
+        font-family: "Dancing Script";
     }
     .category{
         background-color: rgba(0, 0, 0, 0.2);
@@ -1209,7 +1207,7 @@
         margin: 0;
     }
     .headt{
-        font-family: "Dancing script";
+        font-family: "Dancing Script";
         font-size: 1.75rem;
         text-align: center;
     }
@@ -1217,9 +1215,7 @@
         font-size: 1.25rem;
         margin-left: 25%;
     }
-
 }
-
 /*Women's page css*/
 .Women{
     background-image: url("Images/back7.png");
@@ -1357,7 +1353,7 @@
 }
 /*Nighties css*/
 .nighties{
-    background-image: url("Images/Screenshot 2024-07-22 230539.png");
+    background-image: url("Images/5b2f19ca47110a2f89e3df92971b9c6e.jpg");
     background-position: center;
     background-repeat:repeat;
     background-size:contain;
@@ -1365,21 +1361,21 @@
 }
 /*frocks css*/
 .frocks{
-    background-image: url("Images/b736b41027dafe216d749a0562ba0b3f.jpg");
+    background-image: url("Images/back3.png");
     background-position: center;
     background-repeat:repeat;
     max-width:1366px;
 }
 /*rompers css*/
 .rompers{
-    background-image: url("Images/b736b41027dafe216d749a0562ba0b3f.jpg");
+    background-image: url("Images/back4.png");
     background-position: center;
     background-repeat:repeat;
     max-width:1366px;
 }
 /*bedspread*/
 .bedspread{
-    background-image: url("Images/b736b41027dafe216d749a0562ba0b3f.jpg");
+    background-image: url("Images/back5.png");
     background-position: center;
     background-repeat:repeat;
     max-width:1366px;
@@ -1390,14 +1386,14 @@
 }
 /*pouches css*/
 .pouches{
-    background-image: url("Images/b736b41027dafe216d749a0562ba0b3f.jpg");
+    background-image: url("Images/back2.png");
     background-position: center;
     background-repeat:repeat;
     max-width:1366px;
 }
 /*naphkins*/
 .naphkins{
-    background-image: url("Images/Screenshot 2024-07-22 230539.png");
+    background-image: url("Images/5b2f19ca47110a2f89e3df92971b9c6e.jpg");
     background-position: center;
     background-repeat:repeat;
     max-width:1366px;
@@ -1415,28 +1411,28 @@
 }
 /*nightsuit*/
 .night_suit{
-    background-image: url("Images/b736b41027dafe216d749a0562ba0b3f.jpg");
+    background-image: url("Images/5faee9bd2299e38b35a8fde3213f513a.jpg");
     background-position: center;
     background-repeat:repeat;
     max-width:1366px;
 }
 /*kurti*/
 .kurti{
-    background-image: url("Images/b736b41027dafe216d749a0562ba0b3f.jpg");
+    background-image: url("Images/back5.png");
     background-position: center;
     background-repeat:repeat;
     max-width:1366px;
 }
 /*sareeskirt*/
 .saree_skirt{
-    background-image: url("Images/b736b41027dafe216d749a0562ba0b3f.jpg");
+    background-image: url("Images/back3.png");
     background-position: center;
     background-repeat:repeat;
     max-width:1366px;
 }
 /*arrivals*/
 .arrivals{
-    background-image: url("Images/b736b41027dafe216d749a0562ba0b3f.jpg");
+    background-image: url("Images/6127fb195768bebdb60607ffb744899f.jpg");
     background-position: center;
     background-repeat:repeat;
     max-width:1366px;
