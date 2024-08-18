@@ -893,7 +893,7 @@
 .container {
     width: 100%;
     max-width: 1366px;
-    margin-top: 20px;
+    margin-top:0;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -901,19 +901,21 @@
 }
 .stories-section {
     display: flex;
-    padding: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 0.5rem;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 .story {
-    margin-right: 10px;
+    margin-right: 1.5rem;
     text-align: center;
 }
 .story img {
-    width: 70px;
-    height:70px;
+    width: 5rem;
+    height:5rem;
     border-radius: 50%;
-    border: 2px solid #c13584;
+    border: 2px solid rgba(211, 34, 43, 0.973);
     cursor: pointer;
 }
 .story-name {
@@ -924,75 +926,101 @@
     color:white;
     word-wrap: break-word;
 }
-/*Women's page css*/
-.Women{
+.catext{
+    font-family: "Dancing script";
+    font-size: 2rem;
+}
+/*category css*/
+.category{
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: -5px -5px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    margin: 0;
-    border:4px solid #333;
-    max-width: 1366px;
+    box-shadow: -5px -5px rgba(0, 0, 0, 0.7);
+    border: 0.15rem solid black;
+    border-radius: 2.5%;
+    color: white;
+    margin-top: 0;
 }
 .img-cat{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
 }
 .img-cat img{
-    padding: 50px;
-    width: 200px;
-    height:300px;
+    padding:0;
+    width: 15rem;
+    height:auto;
     cursor: pointer;
-    border-radius: 25%;
     transition: transform 0.3s ease;
+    border-radius: 20%;
+    border: 0.15rem solid black;
+    margin-left:2rem;
+    margin-right:2rem;
 }
 .img-cat img:hover {
     transform: scale(1.05);
 }
 .loop-video{
-    width: 400px;
-    height:300px;
+    width: 20rem;
+    height:18rem;
     border-radius: 40%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left:0;
-    margin-right: 25px;
-
+    border: 0.15rem solid black;
+    margin-left:2rem;
+    margin-right:2rem;
+    margin-bottom: 3rem;
+}
+.head {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: -5px -5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-family: "Dancing Script";
+    font-size:1.25rem;
+    font-style:oblique;
+    color: white;
+    padding:0.01rem;
+    width: auto;
+    margin: 0;
+}
+/*Women's page css*/
+.Women{
+    background-image: url("Images/back7.png");
+    background-repeat:repeat;
+    background-attachment:fixed;
+    background-position:top; 
+    background-size:contain;
+    border-radius: 0.5rem;
+    overflow-x: hidden;
+    margin: 0;
+    border:4px solid #333;
+    max-width: 1366px;
 }
 /*Children's page css*/
 .children{
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: -5px -5px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
+    background-image: url("Images/back6.png");
+    background-repeat:repeat;
+    background-attachment:fixed;
+    background-position:top; 
+    background-size:contain;
+    border-radius: 0.5rem;
+    overflow-x: hidden;
     margin: 0;
     border:4px solid #333;
     max-width: 1366px;
 }
 /*Homedecor page css*/
 .Homedecor{
-    background-image: url('Images/5faee9bd2299e38b35a8fde3213f513a.jpg');
-    background-position: center;
+    background-image: url("Images/back8.png");
     background-repeat:repeat;
-    width:100%;
+    background-attachment:fixed;
+    background-position:top; 
+    background-size:contain;
+    border-radius: 0.5rem;
+    overflow-x: hidden;
     margin: 0;
     border:4px solid #333;
-    overflow-x: hidden;
+    max-width: 1366px;
 }
-/*Nighties css*/
-.nighties{
-    background-image: url("Images/Screenshot 2024-07-22 230539.png");
-    background-position: center;
-    background-repeat:repeat;
-    background-size:contain;
-    max-width:1366px;
-}
-.head {
-    text-align: center;
-    font-family: "Dancing Script";
-    font-size:20px;
-    font-style:oblique;
-    padding: 0;
-    margin: 0;
-}
+/*gallery css*/
 .gallery{
     display: flex;
     flex-wrap: wrap;
@@ -1044,6 +1072,14 @@
     color: white;
     font-size: 2em;
     cursor: pointer;
+}
+/*Nighties css*/
+.nighties{
+    background-image: url("Images/Screenshot 2024-07-22 230539.png");
+    background-position: center;
+    background-repeat:repeat;
+    background-size:contain;
+    max-width:1366px;
 }
 /*frocks css*/
 .frocks{
