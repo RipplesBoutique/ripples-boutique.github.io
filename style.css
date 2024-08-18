@@ -39,6 +39,23 @@
     font-size:1.75rem;
     -webkit-text-fill-color: white;
 } 
+@media (max-width: 1024px) {
+    .Ripples{
+        background-size:1024px 768px;
+        background-attachment:fixed;
+    }
+    .Rip {
+        height: auto; 
+        padding:1.50rem; 
+    }
+    .Riptext {
+        margin-left: 25%; 
+        font-size: 1.5rem;
+    }
+    .Rip img{
+        max-width:20rem;
+    }
+}
 @media (max-width: 768px) {
     .Ripples{
         background-size: 768px 1024px;
@@ -905,7 +922,7 @@
     scrollbar-width: none;
     padding: 0.5rem;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 .story {
     margin-right: 1.5rem;
@@ -920,17 +937,76 @@
 }
 .story-name {
     margin-top: 5px;
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 1.5rem;
     font-family: 'Dancing Script';
     color:white;
     word-wrap: break-word;
 }
+@media (max-width:1024px){
+    .container {
+        width: 100%;
+        max-width: 1024px;
+        margin-top:0;
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow:10px black
+    }
+    .stories-section {
+        padding: 0.5rem;
+        border-radius: 10px;
+        margin-bottom: 0;
+    }
+    .story {
+        margin-right: 1.5rem;
+        text-align: center;
+    }
+    .story img {
+        width: 5rem;
+        height:5rem;
+        border-radius: 50%;
+        border: 2px solid rgba(211, 34, 43, 0.973);
+        cursor: pointer;
+    }
+    .story-name {
+        margin-top: 5px;
+        font-size: 20px;
+        font-family: 'Dancing Script';
+    }
+}
+@media (max-width:368px){
+    .container {
+        width: 100%;
+        max-width: 368px;
+        margin-top:0;
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow:10px black
+    }
+    .stories-section {
+        padding: 0.5rem;
+        border-radius: 10px;
+        margin-bottom:0;
+    }
+    .story {
+        margin-right: 0.5rem;
+        text-align: center;
+    }
+    .story img {
+        width: 4rem;
+        height:4rem;
+        border-radius: 50%;
+        border: 2px solid rgba(211, 34, 43, 0.973);
+        cursor: pointer;
+    }
+    .story-name {
+        margin-top: 5px;
+        font-size: 20px;
+        font-family: 'Dancing Script';
+    }
+}
+/*category css*/
 .catext{
     font-family: "Dancing script";
     font-size: 2rem;
 }
-/*category css*/
 .category{
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: -5px -5px rgba(0, 0, 0, 0.7);
@@ -981,6 +1057,169 @@
     width: auto;
     margin: 0;
 }
+.headt{
+    font-family: "Dancing script";
+    font-size: 3rem;
+    text-align: center;
+}
+.headtext{
+    font-size: 1.75rem;
+    margin-left: 25%;
+}
+@media (max-width:1024px){
+    .catext{
+        font-size: 1.75rem;
+        font-family: "Dancing script";
+    }
+    .category{
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: -5px -5px rgba(0, 0, 0, 0.7);
+        border: 0.15rem solid black;
+        border-radius: 2.5%;
+    }
+    .img-cat{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .img-cat img{
+        width: 10rem;
+        height:auto;
+        border-radius: 18%;
+        border: 0.15rem solid black;
+        margin-left:2rem;
+        margin-right:2rem;
+    }
+    .loop-video{
+        width: 15rem;
+        height:13rem;
+        border-radius: 40%;
+        border: 0.15rem solid black;
+        margin-left:1.5rem;
+        margin-right:1.5rem;
+        margin-bottom: 3rem;
+    }
+    .head {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: -5px -5px rgba(0, 0, 0, 0.7);
+        font-size:2.5rem;
+        padding:0.01rem;
+        width: auto;
+        margin: 0;
+    }
+    .headt{
+        font-family: "Dancing script";
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .headtext{
+        font-size: 1.5rem;
+        margin-left: 25%;
+    }
+
+}
+@media (max-width:768px){
+    .catext{
+        font-size: 1.5rem;
+        font-family: "Dancing script";
+    }
+    .category{
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: -2.5px -2.5px rgba(0, 0, 0, 0.6);
+        border: 0.1rem solid black;
+        border-radius: 2.5%;
+    }
+    .img-cat{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .img-cat img{
+        width: 8rem;
+        height:auto;
+        border-radius: 15%;
+        border: 0.1rem solid black;
+        margin-left:1.5rem;
+        margin-right:1.0rem;
+    }
+    .loop-video{
+        width: 12rem;
+        height:10rem;
+        border-radius: 40%;
+        border: 0.1rem solid black;
+        margin-left:0.5rem;
+        margin-right:0.5rem;
+        margin-bottom: 2rem;
+    }
+    .head {
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: -5px -5px rgba(0, 0, 0, 0.7);
+        font-size:2.5rem;
+        padding:0.01rem;
+        width: auto;
+        margin: 0;
+    }
+    .headt{
+        font-family: "Dancing script";
+        font-size: 2rem;
+        text-align: center;
+    }
+    .headtext{
+        font-size: 1.25rem;
+        margin-left: 25%;
+    }
+
+}
+@media (max-width:368px){
+    .catext{
+        font-size: 1.25rem;
+        font-family: "Dancing script";
+    }
+    .category{
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: -2.5px -2.5px rgba(0, 0, 0, 0.6);
+        border: 0.1rem solid black;
+        border-radius: 2.5%;
+    }
+    .img-cat{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .img-cat img{
+        width: 5rem;
+        height:auto;
+        border-radius: 15%;
+        border: 0.1rem solid black;
+        margin-left:1rem;
+        margin-right:1rem;
+    }
+    .loop-video{
+        width: 10rem;
+        height:8rem;
+        border-radius: 40%;
+        border: 0.1rem solid black;
+        margin-left:0.4rem;
+        margin-right:0.4rem;
+        margin-bottom: 2rem;
+    }
+    .head {
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: -5px -5px rgba(0, 0, 0, 0.7);
+        font-size:2.5rem;
+        padding:0.01rem;
+        width: auto;
+        margin: 0;
+    }
+    .headt{
+        font-family: "Dancing script";
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .headtext{
+        font-size: 1.25rem;
+        margin-left: 25%;
+    }
+
+}
+
 /*Women's page css*/
 .Women{
     background-image: url("Images/back7.png");
@@ -1019,6 +1258,49 @@
     margin: 0;
     border:4px solid #333;
     max-width: 1366px;
+}
+@media (max-width: 1024px) {
+    .Women{
+        background-size:1024px auto;
+        background-attachment:fixed;
+    }
+    .children{
+        background-size:1024px auto;
+        background-attachment:fixed;
+    }
+    .Homedecor{
+        background-size:1024px auto;
+        background-attachment:fixed;
+    }
+}
+@media (max-width: 768px) {
+    .Women{
+        background-size:768px auto;
+        background-attachment:fixed;
+    }
+    .children{
+        background-size:768px auto;
+        background-attachment:fixed;
+    }
+    .Homedecor{
+        background-size:768px auto;
+        background-attachment:fixed;
+    }
+
+}
+@media (max-width: 368px) {
+    .Women{
+        background-size:368px auto;
+        background-attachment:fixed;
+    }
+    .children{
+        background-size:368px auto;
+        background-attachment:fixed;
+    }
+    .Homedecor{
+        background-size:368px auto;
+        background-attachment:fixed;
+    }
 }
 /*gallery css*/
 .gallery{
