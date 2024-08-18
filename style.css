@@ -986,7 +986,7 @@
         margin-bottom:0;
     }
     .story {
-        margin-right: 0.5rem;
+        margin-right: 1.5rem;
         text-align: center;
     }
     .story img {
@@ -1004,7 +1004,7 @@
 }
 /*category css*/
 .catext{
-    font-family: "Dancing script";
+    font-family: "Dancing Script";
     font-size: 2rem;
 }
 .category{
@@ -1182,8 +1182,8 @@
         margin-bottom: 1.5rem;
     }
     .img-cat img{
-        width: 5rem;
-        height:auto;
+        width:5rem;
+        height:max-content;
         border-radius: 15%;
         border: 0.1rem solid black;
         margin-left:1rem;
