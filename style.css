@@ -1030,7 +1030,7 @@
     transition: transform 0.3s ease;
     border-radius: 20%;
     border: 0.15rem solid black;
-    margin-left:2rem;
+    margin-left:1.75rem;
     margin-right:2rem;
 }
 .img-cat img:hover {
